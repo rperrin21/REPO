@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width">
+        <title>JQuery</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+        </script>
+        <script type="text/javascript">
+
+
+            $(document).ready(function(){
+                $('#button1').click(function(){
+                    $("p").add("span").add("textarea").css("background-color","#add080");
+                });
+
+            });
+        </script>
+
+        <style type="text/css">
+            button{
+                display: :block;
+                margin: 20 px 0 0 0;
+
+
+            }
+        </style>
+    </head>
+    <body>
+        <textarea> Exercice 2 _JQuery</textarea>
+        <p> jQuery</p>
+        <span> Exercices</span>
+        <button id ="button1"> Cliquez pour voir l'effet</button>
+    </body>
+    </html>

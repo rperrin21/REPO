@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width">
+        <title>JQuery</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function()
+            {
+                $('#button1').click(function(){
+                    $('h1').css('fontSize', '50px');
+                });
+                $('#button2').click(function(){
+                    $('#un_id').css('color', 'red');
+                });
+                $('#button3').click(function(){
+                    $('#une_classe').css('display', 'none');
+                });
+            }
+        </script>
+    </head>
+    
+    <body>
+            <h1>Exercice 2</h1>
+        <div id="un_id"> Bonjour Paris !</div>
+        
+        <p class="une_classe">Jeux Olympiques Paris 2024</p>
+        <button id="button1">Cliquer pour changer la taille de h1</button>
+        <button id="button2">Cliquer pour changer la couleur de l'id</button>
+        <button id="button3">Cliquer pour charger une classe</button>
+    </body>
+</html>
