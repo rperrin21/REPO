@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Exercice 6 - jQuery</title>
+    <meta charset = "utf-8">
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('#accept').click(function(){
+            if($('#submitbtn').is(':disabled')){
+                $('#submitbtn').removeAttr('disabled');
+            }else{$('#submibtn').attr('disabled', 'disabled');}
+        });
+    });
+    </script>
+    </head>
+    <body>
+        <input id="accept" name="accept" type="checkbox" value="y"/>J'accepte les conditions.<br>
+        <input id="submitbtn" disabled="disabled" name="Submit" type="submit" value="Submit"/>
+    </body>
+</html>

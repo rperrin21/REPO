@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Exercice 7 - jQuery</title>
+    <meta charset = "utf-8">
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $('p').click(function(){
+                $("<p>Ceci est le texte ajouté à la fin du document.</p>").appendTo(document.body);
+            });
+        });
+    </script>        
+</head>
+    <body><p>Ceci est le texte original de ce document.</p></body>
+</html>

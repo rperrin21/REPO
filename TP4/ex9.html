@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JS Bin</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+var pdbl = $("p");
+pdbl.dblclick(function() {
+pdbl.toggleClass( "dbl" );
+});
+});
+</script>
+<style type="text/css">
+p { background: blue;
+ color: white;
+ }
+ p.dbl { background: red;
+ color: white;
+ }
+</style>
+</head>
+<body>
+<p>Double-cliquez pour changer la couleur de fond</p>
+</body>
+</html>

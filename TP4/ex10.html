@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Get the styles (width, height, text color, and background color) of a clicked
+division.</title>
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$( "div" ).click(function() {
+var html = [ "Le div cliqué a les styles suivants:" ];
+var styleProps = $( this ).css([
+"width", "height", "color", "background-color"
+]);
+$.each( styleProps, function( prop, value ) {
+html.push( prop + ": " + value );
+});
+$( "#resultat" ).html( html.join("<br>") );
+});
+});
+</script>
+    
+<style type="text/css">
+div {
+height: 50px;
+margin: 5px;
+padding: 5px;
+float: left;
+}
+#box1 {
+width: 50px;
+color: yellow;
+background-color: red;
+}
+#box2 {
+width: 50px;
+color: rgb(255, 255, 255);
+background-color: rgb(15, 99, 30);
+}
+#box3 {
+width: 50px;
+color: #fcc;
+background-color: #123456;
+}
+p {
+clear: both;
+color: blue;
+}
+</style>
+</head>
+<body>
+<div id="box1">A</div>
+<div id="box2">B</div>
+<div id="box3">C</div>
+<p id="resultat">&nbsp;</p>
+</body>
+</html>
